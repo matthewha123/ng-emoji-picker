@@ -1,11 +1,11 @@
 {
-  "name": "ng-emoji-picker",
+  "name": "enn-emoji-picker",
   "version": "6.0.0",
   "description": "Angular Emoji Picker",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lbertenasco/ng-emoji-picker.git"
+    "url": "https://github.com/matthewha123/ng-emoji-picker"
   },
   "keywords": [
     "angular",
@@ -15,9 +15,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lbertenasco/ng-emoji-picker/issues"
+    "url": "https://github.com/matthewha123/ng-emoji-picker/issues"
   },
-  "homepage": "https://github.com/lbertenasco/ng-emoji-picker#readme",
+  "homepage": "https://github.com/matthewha123/ng-emoji-picker#readme",
   "dependencies": {
     "@angular/common": "^6.x.x",
     "@angular/core": "^6.x.x",

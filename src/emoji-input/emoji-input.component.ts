@@ -224,6 +224,7 @@ export class EmojiInputComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   onEmojiClick(e) {
+    this.updateCursor();
     this.input = this.input.substr(0, this.lastCursorPosition) + e + this.input.substr(this.lastCursorPosition);
     this.modelChange.emit(this.input);
     this.emojiClick.emit(e);
@@ -241,9 +242,9 @@ export class EmojiInputComponent implements OnInit, AfterViewInit, OnChanges {
 
   updateCursor() {
     if (this.textArea) {
-      this.lastCursorPosition = this.textareaEl.nativeElement.selectionStart;
+      this.lastCursorPosition = this.textareaEl.nativeElement.selectionEnd;
     } else {
-      this.lastCursorPosition = this.inputEl.nativeElement.selectionStart;
+      this.lastCursorPosition = this.inputEl.nativeElement.selectionEnd;
     }
   }
 }
